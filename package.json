@@ -1,0 +1,43 @@
+{
+  "name": "gulp_boilerplate_directory",
+  "version": "1.0.0",
+  "description": "Boilerplate for using gulp with modern front end technologies",
+  "main": "Gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bsync": "browser-sync start --server --files \".html, *.css\"",
+    "g": "gulp"
+  },
+  "author": "Kevin Coyle",
+  "license": "ISC",
+  "cssnano": {
+    "preset": [
+      "advanced",
+      {
+        "discardComments": {
+          "removeAll": true
+        }
+      }
+    ]
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "cssnano": "^3.10.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^4.0.0",
+    "gulp-inline-css": "^3.1.1",
+    "gulp-postcss": "^7.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "postcss-uncss": "^0.16.1",
+    "pump": "^2.0.0",
+    "uncss": "^0.16.1"
+  },
+  "repository": "0"
+}

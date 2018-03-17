@@ -1,0 +1,24 @@
+.purpose, .landing,  .projects{
+  display:none;
+}
+// .projects{
+//   display:block;
+// }
+
+.gridContainer {
+  display : grid;
+
+  grid-template-areas : 
+  " getInvolved getInvolved getInvolved     getInvolved discord discord "
+  " landing landing landing                 landing landing landing "
+  " purpose purpose purpose                 purpose purpose purpose "
+  " projects projects projects              projects projects projects ";
+
+  grid-template-columns : [col-1] 1fr [col-2] 1fr [col-3] 1fr [col-4] 1fr [col-5] 1fr [col-6] 1fr;
+  grid-template-rows : 100vh 70vh 70vh 70vh;
+}
+
+
+
+
+// .getInvolved, .discord,

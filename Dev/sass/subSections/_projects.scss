@@ -1,0 +1,39 @@
+
+
+
+.projects{
+margin-top:5rem;
+}
+.projectsContainer{
+  display:flex;
+  flex-wrap:wrap;
+  max-width:100%;
+  // justify-content:center;
+
+}
+
+
+.item1{
+  @extend %projectPlaceHolder;
+
+  background:linear-gradient(15deg, rgb(100, 225, 181), rgb(156, 216, 220));
+ 
+}
+
+.item2{
+  @extend %projectPlaceHolder;
+
+background:linear-gradient(15deg, rgb(229, 118, 138), rgb(226, 185, 172));
+}
+
+.item3{
+ @extend %projectPlaceHolder;
+
+background:linear-gradient(15deg, rgb(3, 197, 136), rgb(29, 202, 222));
+}
+
+.item4{
+  @extend %projectPlaceHolder;
+
+background:linear-gradient(15deg, rgb(116, 168, 144), rgb(165, 170, 170));
+}

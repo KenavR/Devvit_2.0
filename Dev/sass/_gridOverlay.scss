@@ -1,0 +1,61 @@
+$gray : hsl(160, 3%, 83%);
+$placeholder : hsl(160, 3%, 83%);
+
+body {
+  // background-color : $placeholder;
+  overflow-x:hidden;
+}
+
+.gridContainer {
+  display : grid;
+
+  grid-template-areas : 
+  " landing landing landing                 landing landing landing "
+  " purpose purpose purpose                 purpose purpose purpose "
+  " getInvolved getInvolved getInvolved     getInvolved discord discord "
+  " projects projects projects              projects projects projects ";
+;
+  grid-template-columns : [col-1] 1fr [col-2] 1fr [col-3] 1fr [col-4] 1fr [col-5] 1fr [col-6] 1fr;
+  grid-template-rows : 100vh 70vh 70vh 70vh;
+}
+
+
+.landing {
+ @extend %section;
+
+  // color:darken($gray, 60%);
+
+  // background-color : darken($gray, 0%);
+  grid-area : landing;
+}
+
+.purpose {
+//  @extend %section;
+
+  // color:darken($gray, 60%);
+  // background-color : $gray;
+  grid-area : purpose;
+}
+
+.getInvolved {
+ @extend %section;
+
+  // color:darken($gray, 60%);
+  // background-color : darken($gray, 5%);
+  grid-area : getInvolved;
+}
+.discord {
+ @extend %section;
+
+  // color:darken($gray, 60%);
+  // background-color:lighten($gray, 5%);
+  grid-area : discord;
+}
+
+.projects {
+ @extend %section;
+
+  // color:darken($gray, 60%);
+  // background-color : $gray;
+  grid-area : projects;
+}

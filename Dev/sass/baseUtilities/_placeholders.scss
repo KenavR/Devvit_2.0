@@ -1,0 +1,55 @@
+// Use @extend for placeholders
+%useBodyFont {
+  font-family:'Roboto', sans-serif;
+  }
+  %useHeadlineFont {
+  font-family:'Nunito', sans-serif;
+  }
+
+%outsideMargin {
+  width : 80%;
+  max-width : 80%;
+  margin : 0 auto;
+
+}
+%zeroMargin {
+  margin : 0;
+}
+
+%cbLabel{
+  transition:.7s all ease-in;
+  padding:1rem;
+  border:2px solid transparent;
+  border-radius:3rem;
+}
+%section{
+  
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+
+}
+
+%projectPlaceHolder{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  height:25vh;
+  min-width:40%;
+  margin:4% 4%;
+  border-radius:5px;
+  @include offsetShadow(1px,2px,2px,1px);
+
+  h2{
+    margin-bottom:1rem;
+    
+  }
+  p{
+    margin-bottom:1rem;
+    display:block;
+
+  }
+}
+
