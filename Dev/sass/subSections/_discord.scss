@@ -1,27 +1,25 @@
-
-
-.discord-widget{border-color:$logoDG !important; }
+.discord-widget {
+  border-color : $logoDG !important;
+}
 
 
 .discord {
   display : grid;
 
-
   grid-template-areas : ". . btn btn btn ."
   ". . widget widget widget .  "
   ". . . . . .  ";
+
   grid-template-columns : [col-1] 1fr [col-2] 1fr [col-3] 1fr [col-4] 1fr [col-5] 1fr [col-6] 1fr;
   grid-template-rows : 1fr 1fr 1fr;
-
-
 
   a.btn {
     color : $body-Font;
 
     padding : 1rem;
 
--webkit-transition: background-image 0.2s ease-in-out;
-transition: background-image 0.2s ease-in-out;
+    -webkit-transition : background-image 0.2s ease-in-out;
+            transition : background-image 0.2s ease-in-out;
     text-align : center;
 
     border : 0;
@@ -33,8 +31,9 @@ transition: background-image 0.2s ease-in-out;
 @include offsetShadow(0px, 4px, 3px, 2px);
 
     &:hover {
+      color : white;
+
       background-image : linear-gradient(15deg, $logoDR, $logoBR);
-      color:white;
     }
   }
 

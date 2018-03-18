@@ -1,6 +1,5 @@
-.getInvolved{
-
-display:grid;
+.getInvolved {
+  display : grid;
 
   grid-template-areas :
 ". one one . . . ."
@@ -9,33 +8,36 @@ display:grid;
 ". . . . four four ."
 ". five five . . . ."
 ". . . six six . .";
-
   grid-template-columns : [col-1] 1fr [col-2] 1fr [col-3] 1fr [col-4] 1fr [col-5] 1fr [col-6] 1fr [col-7] 1fr;
   grid-template-rows : 1fr 1fr 1fr 1fr 1fr 3fr;
 }
 
 
-.one{
-grid-area:one;
-font-size:1.2rem;
-}
-.two{
-grid-area:two;
-font-size:1.2rem;
-}
-.three{
-grid-area:three;
-font-size:1.2rem;
-}
-.four{
-grid-area:four;
-font-size:1.2rem;
-}
-.five{
-grid-area:five;
-font-size:1.2rem;
-}
-.six{
-grid-area:six;
+.one {
+  font-size : 1.2rem;
 
+  grid-area : one;
+}
+.two {
+  font-size : 1.2rem;
+
+  grid-area : two;
+}
+.three {
+  font-size : 1.2rem;
+
+  grid-area : three;
+}
+.four {
+  font-size : 1.2rem;
+
+  grid-area : four;
+}
+.five {
+  font-size : 1.2rem;
+
+  grid-area : five;
+}
+.six {
+  grid-area : six;
 }

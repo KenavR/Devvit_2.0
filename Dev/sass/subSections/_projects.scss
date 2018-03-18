@@ -1,39 +1,35 @@
-
-
-
-.projects{
-margin-top:5rem;
+.projects {
+  margin-top : 5rem;
 }
-.projectsContainer{
-  display:flex;
-  flex-wrap:wrap;
-  max-width:100%;
-  // justify-content:center;
+.projectsContainer {
+  display : flex;
 
+  max-width : 100%;
+
+  flex-wrap : wrap;
 }
 
 
-.item1{
+.item1 {
+  background : linear-gradient(15deg, rgb(100, 225, 181), rgb(156, 216, 220));
+
   @extend %projectPlaceHolder;
-
-  background:linear-gradient(15deg, rgb(100, 225, 181), rgb(156, 216, 220));
- 
 }
 
-.item2{
+.item2 {
+  background : linear-gradient(15deg, rgb(229, 118, 138), rgb(226, 185, 172));
+
   @extend %projectPlaceHolder;
-
-background:linear-gradient(15deg, rgb(229, 118, 138), rgb(226, 185, 172));
 }
 
-.item3{
- @extend %projectPlaceHolder;
+.item3 {
+  background : linear-gradient(15deg, rgb(3, 197, 136), rgb(29, 202, 222));
 
-background:linear-gradient(15deg, rgb(3, 197, 136), rgb(29, 202, 222));
-}
-
-.item4{
   @extend %projectPlaceHolder;
+}
 
-background:linear-gradient(15deg, rgb(116, 168, 144), rgb(165, 170, 170));
+.item4 {
+  background : linear-gradient(15deg, rgb(116, 168, 144), rgb(165, 170, 170));
+
+  @extend %projectPlaceHolder;
 }

@@ -1,28 +1,19 @@
-@import './Dev/sass/baseUtilities/_variables.scss';
+@import "./Dev/sass/baseUtilities/_variables.scss";
+@import "./Dev/sass/baseUtilities/_mixins.scss";
+@import "./Dev/sass/baseUtilities/_placeholders.scss";  
 
+/* Global Styles */
+@import "./Dev/sass/_global.scss";
 
-@import './Dev/sass/baseUtilities/_mixins.scss';
+/*  Parent Overlay  */
+@import "./Dev/sass/_gridOverlay.scss";
 
-
-@import './Dev/sass/baseUtilities/_placeholders.scss';  
-@import './Dev/sass/_global.scss';
-@import './Dev/sass/_checkTest.scss';
- 
-
-
-
-
-
-
-    /*  Parent Overlay  */
-@import './Dev/sass/_gridOverlay.scss';
-
-    /*   Sections   */
-@import './Dev/sass/subSections/_landing.scss';
-@import './Dev/sass/subSections/_purpose.scss';
-@import './Dev/sass/subSections/_discord.scss';
-@import './Dev/sass/subSections/_getInvolved.scss';
-@import './Dev/sass/subSections/_projects.scss';
+/*   Sections   */
+@import "./Dev/sass/subSections/_landing.scss";
+@import "./Dev/sass/subSections/_purpose.scss";
+@import "./Dev/sass/subSections/_discord.scss";
+@import "./Dev/sass/subSections/_getInvolved.scss";
+@import "./Dev/sass/subSections/_projects.scss";
 
 
 
@@ -30,6 +21,5 @@
 
 
 
-           
 
- 
+
