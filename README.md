@@ -1,34 +1,14 @@
 # Devvit_2.0
 
-### Gulp Build System Template 
+The only gulp command you need to worry about is just 
 
-This gist for [gulpfile](https://gist.github.com/Tor020/41f20722baf152e873cc876feafbe381
-)
-
-Comes packaged with bulma in .scss format in the vendor folder
-
-npm install or yarn install
-
-runs sass compile and watch task
 ```gulp```
+which runs sass compile and watch task.
 
-creates a new stylesheet to show which styles are being used in the html
-```gulp test ```
+___
 
-minifies both the css and javascript (babelify)
-```gulp minify```
+Don't worry about building the files
 
-uglify + babel javascript
-```gulp babelify```
+If you want to make updates / changes / improvements, just submit a pull request and make the changes to the files within the Dev Folder.
 
-minifies css and injects into body
-```gulp bodyInjectCss```
-
-check the CSS styles in use against the index.html page and create a document with only the styles that are currently in use on the page
-```gulp checkCss```
-
-minifies images
-```gulp imageMin```
-
-pipes html and minifies everything
-```gulp plsgo```
+When it's merged, I'll take care of transferring the new files over to the live branch.
