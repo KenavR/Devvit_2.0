@@ -1,42 +1,53 @@
-$gray : hsl(160, 3%, 83%);
-$placeholder : hsl(160, 3%, 83%);
+$gray: hsl(160, 3%, 83%);
+$placeholder: hsl(160, 3%, 83%);
 
 body {
-  overflow-x : hidden;
+  overflow-x: hidden;
 }
 
 .gridContainer {
-  display : grid;
+  display: grid;
 
-  grid-template-areas : " landing landing landing                 landing landing landing "
-  " purpose purpose purpose                 purpose purpose purpose "
-  " getInvolved getInvolved getInvolved     getInvolved discord discord "
-  " projects projects projects              projects projects projects ";
-  grid-template-columns : [col-1] 1fr [col-2] 1fr [col-3] 1fr [col-4] 1fr [col-5] 1fr [col-6] 1fr;
-  grid-template-rows : 100vh 70vh 70vh 70vh;
-  ;
+  grid-template-areas:
+    " landing landing landing                 landing landing landing "
+    " purpose purpose purpose                 purpose purpose purpose "
+    " getInvolved getInvolved getInvolved     getInvolved discord discord "
+    " projects projects projects              projects projects projects ";
+  grid-template-columns: [col-1] 1fr [col-2] 1fr [col-3] 1fr [col-4] 1fr [col-5] 1fr [col-6] 1fr;
+  grid-template-rows: 100vh 70vh auto auto;
+
+  @media screen and (max-width: $break-point) {
+    grid-template-columns: 100%;
+    grid-template-rows: 100vh auto auto auto auto;
+    grid-template-areas:
+      " landing "
+      " purpose "
+      " getInvolved "
+      " discord "
+      " projects ";
+  }
 }
-
 
 .landing {
   @extend %section;
-  grid-area : landing;
+  grid-area: landing;
 }
 
 .purpose {
-  grid-area : purpose;
+  @extend %section;
+  grid-area: purpose;
 }
 
 .getInvolved {
   @extend %section;
-  grid-area : getInvolved;
+  grid-area: getInvolved;
 }
 .discord {
   @extend %section;
-  grid-area : discord;
+  grid-area: discord;
 }
 
 .projects {
   @extend %section;
-  grid-area : projects;
+  grid-area: projects;
 }

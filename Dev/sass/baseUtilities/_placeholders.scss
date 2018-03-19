@@ -1,56 +1,62 @@
-
 %useBodyFont {
-  font-family : "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 %useHeadlineFont {
-  font-family : "Nunito", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 %outsideMargin {
-  width : 80%;
-  max-width : 80%;
-  margin : 0 auto;
+  width: 80%;
+  max-width: 80%;
+  margin: 0 auto;
 }
 %zeroMargin {
-  margin : 0;
+  margin: 0;
 }
 
 %cbLabel {
-  padding : 1rem;
+  padding: 1rem;
 
-  transition : 0.7s all ease-in;
+  transition: 0.7s all ease-in;
 
-  border : 2px solid transparent;
-  border-radius : 3rem;
+  border: 2px solid transparent;
+  border-radius: 3rem;
 }
 %section {
-  display : flex;
-  flex-direction : column;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
 
-  align-items : center;
-  justify-content : center;
+  align-items: center;
+  justify-content: center;
 }
 
 %projectPlaceHolder {
-  display : flex;
-  flex-direction : column;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: center;
 
-  min-width : 40%;
-  height : 25vh;
-  margin : 4% 4%;
+  min-width: 320px;
+  flex-basis: 35%;
+  height: 25vh;
+  margin: 4% 4%;
+  padding: 15px;
 
-  border-radius : 5px;
+  border-radius: 5px;
 
-  align-items : center;
-@include offsetShadow(1px,2px,2px,1px);
-  justify-content : center;
+  align-items: center;
+  @include offsetShadow(1px, 2px, 2px, 1px);
+  justify-content: center;
   h2 {
-    margin-bottom : 1rem;
+    margin-bottom: 1rem;
   }
   p {
-    display : block;
+    display: block;
 
-    margin-bottom : 1rem;
+    margin-bottom: 1rem;
+  }
+
+  @media screen and (max-width: $break-point) {
   }
 }
-
