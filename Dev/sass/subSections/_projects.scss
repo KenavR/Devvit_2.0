@@ -1,35 +1,50 @@
 .projects {
-  margin-top : 5rem;
-}
-.projectsContainer {
-  display : flex;
+  padding-left: 0;
+  padding-right: 0;
 
-  max-width : 100%;
+  .projectsContainer {
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
 
-  flex-wrap : wrap;
-}
+    @media screen and (max-width: $break-point) {
+      flex-direction: row;
+    }
 
+    .item1 {
+      background: linear-gradient(
+        15deg,
+        rgb(100, 225, 181),
+        rgb(156, 216, 220)
+      );
 
-.item1 {
-  background : linear-gradient(15deg, rgb(100, 225, 181), rgb(156, 216, 220));
+      @extend %projectPlaceHolder;
+    }
 
-  @extend %projectPlaceHolder;
-}
+    .item2 {
+      background: linear-gradient(
+        15deg,
+        rgb(229, 118, 138),
+        rgb(226, 185, 172)
+      );
 
-.item2 {
-  background : linear-gradient(15deg, rgb(229, 118, 138), rgb(226, 185, 172));
+      @extend %projectPlaceHolder;
+    }
 
-  @extend %projectPlaceHolder;
-}
+    .item3 {
+      background: linear-gradient(15deg, rgb(3, 197, 136), rgb(29, 202, 222));
 
-.item3 {
-  background : linear-gradient(15deg, rgb(3, 197, 136), rgb(29, 202, 222));
+      @extend %projectPlaceHolder;
+    }
 
-  @extend %projectPlaceHolder;
-}
+    .item4 {
+      background: linear-gradient(
+        15deg,
+        rgb(116, 168, 144),
+        rgb(165, 170, 170)
+      );
 
-.item4 {
-  background : linear-gradient(15deg, rgb(116, 168, 144), rgb(165, 170, 170));
-
-  @extend %projectPlaceHolder;
+      @extend %projectPlaceHolder;
+    }
+  }
 }

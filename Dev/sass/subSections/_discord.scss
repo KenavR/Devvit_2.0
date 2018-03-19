@@ -1,64 +1,74 @@
 .discord-widget {
-  border-color : $logoDG !important;
+  border-color: $logoDG !important;
 }
 
-
 .discord {
-  display : grid;
+  display: grid;
 
-  grid-template-areas : ". . btn btn btn ."
-  ". . widget widget widget .  "
-  ". . . . . .  ";
+  grid-template-areas:
+    ". . . . . .  "
+    ". . btn btn btn ."
+    ". . widget widget widget .  "
+    ". . . . . .  ";
 
-  grid-template-columns : [col-1] 1fr [col-2] 1fr [col-3] 1fr [col-4] 1fr [col-5] 1fr [col-6] 1fr;
-  grid-template-rows : 1fr 1fr 1fr;
+  grid-template-columns: [col-1] 1fr [col-2] 1fr [col-3] 1fr [col-4] 1fr [col-5] 1fr [col-6] 1fr;
+  grid-template-rows: .5fr 1fr 1fr .5fr;
+
+  @media screen and (max-width: $break-point) {
+    padding: 4%;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+      " btn "
+      " widget ";
+    grid-row-gap: 20px;
+  }
 
   a.btn {
-    color : $body-Font;
+    color: $body-Font;
 
-    padding : 1rem;
+    padding: 1rem;
 
-    -webkit-transition : background-image 0.2s ease-in-out;
-            transition : background-image 0.2s ease-in-out;
-    text-align : center;
+    -webkit-transition: background-image 0.2s ease-in-out;
+    transition: background-image 0.2s ease-in-out;
+    text-align: center;
 
-    border : 0;
-    border-radius : 4px;
-    background-image : linear-gradient(15deg, $logoDG, $logoBG);
+    border: 0;
+    border-radius: 4px;
+    background-image: linear-gradient(15deg, $logoDG, $logoBG);
 
-    grid-area : btn;
+    grid-area: btn;
 
-@include offsetShadow(0px, 4px, 3px, 2px);
+    @include offsetShadow(0px, 4px, 3px, 2px);
 
     &:hover {
-      color : white;
+      color: white;
 
-      background-image : linear-gradient(15deg, $logoDR, $logoBR);
+      background-image: linear-gradient(15deg, $logoDR, $logoBR);
     }
   }
 
   .widget {
-    position : relative;
+    position: relative;
 
-    overflow-y : scroll;
+    overflow-y: scroll;
 
-    grid-area : widget;
+    grid-area: widget;
 
     .container {
-      max-height : 20rem;
+      max-height: 20rem;
     }
   }
 }
 
 .widget::-webkit-scrollbar-track {
-  background-color : transparent;
+  background-color: transparent;
 }
 .widget::-webkit-scrollbar {
-  width : 4px;
+  width: 4px;
 
-  background-color : #3e3f3a;
+  background-color: #3e3f3a;
 }
 .widget::-webkit-scrollbar-thumb {
-  background-color : #c9c8b8;
+  background-color: #c9c8b8;
 }
-
