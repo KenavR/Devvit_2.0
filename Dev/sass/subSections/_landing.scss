@@ -1,12 +1,13 @@
 .landing {
-  display : flex;
-  flex-direction : column;
+  display: flex;
+  flex-direction: column;
+  background-color: #202225;
+  color: white;
 
-  align-items : center;
-  justify-content : center;
+  align-items: center;
+  justify-content: center;
 }
 .subhead {
-  font-size : 18px;
+  font-size: 18px;
   text-align: center;
 }
-

@@ -132,6 +132,8 @@ body {
 .landing {
   display: flex;
   flex-direction: column;
+  background-color: #202225;
+  color: white;
   align-items: center;
   justify-content: center; }
 
