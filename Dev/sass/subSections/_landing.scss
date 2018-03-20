@@ -6,8 +6,48 @@
 
   align-items: center;
   justify-content: center;
+
+  object, h1, p {
+    z-index: 999;
+    text-shadow: 0 0 1px black;
+  }
 }
 .subhead {
   font-size: 18px;
   text-align: center;
+}
+
+.user-avatar {
+  position: absolute;
+  z-index: 900;
+}
+
+.user-avatar.hidden img {
+  /*transform: scale(0);
+  transition: transform 0.5s ease-in-out;*/
+}
+
+.user-avatar img {
+  border-radius: 30px;
+  width: 40px;
+  height: 40px;
+  /*transform: scale(1);
+  transition: transform 0.5s ease-in-out;*/
+}
+
+@keyframes scale-up {
+  from {
+      transform: scale3d(0,0,1);
+  }
+  to {
+      transform: scale3d(1,1,1);
+  }
+}
+
+.animation-scale-up {
+  animation: scale-up .5s forwards;
+}
+
+.animation-scale-down {
+  animation: scale-up .5s backwards reverse;
 }

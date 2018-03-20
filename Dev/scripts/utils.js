@@ -1,4 +1,4 @@
-const UTILS = (function initUtils(window, document) {
+const Utils = (function initUtils(window, document) {
   function convertNodeListToArray(nodeList) {
     return Array.prototype.slice.call(nodeList);
   }
